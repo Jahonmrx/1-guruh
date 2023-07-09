@@ -1,0 +1,19 @@
+header{
+    background-color: $color_kok;
+}
+nav{
+    .container{
+        display: flex;
+        justify-content:space-between;
+    }
+    padding: 16px 0;
+}
+.logo{
+    display: flex;
+}
+.nav_right{
+    display: flex;
+    ul{
+        display: flex;
+    }
+}

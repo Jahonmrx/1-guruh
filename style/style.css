@@ -7,7 +7,7 @@
 }
 
 .container {
-  max-width: 288px;
+  max-width: 1480px;
   margin: 0 auto;
 }
 
@@ -23,6 +23,33 @@ button {
   border: none;
   background-color: #4F9CF9;
   color: white;
+}
+
+header {
+  background-color: #043873;
+}
+
+nav {
+  padding: 16px 0;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+}
+
+.nav_right {
+  display: flex;
+}
+.nav_right ul {
+  display: flex;
+}
+
+.hero {
+  padding: 140px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
