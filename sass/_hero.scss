@@ -5,8 +5,7 @@
     background-position: -2268px -133px;
     background-repeat: no-repeat;
     .container{
-        display: flex;
-        flex-direction: column;
+        display: grid;
         gap: 100px;
     }
 }
@@ -43,7 +42,13 @@
     height: 191px;
     background: var(--primary-100, #C4DEFD);
 }
-@media screen and (min-width: 1424px){
+@media screen and (min-width: 1440px){
+    .container{
+        min-width: 1376px;
+    }
+    .menu_bar{
+        display: none;
+    }
     .hero{
     padding-bottom: 100px;
     background-image: url(/img/Elementhero_bac_.svg);
@@ -53,9 +58,12 @@
     .container{
         display: flex;
         justify-content: space-between;
+        gap: 0;
+        align-items: center;
     }
 }
     .h_left{
+        text-align: start;
         h2{
             font-size: 64px;
             font-weight: 700;
@@ -67,7 +75,7 @@
             font-weight: 400;
             font-size: $font_size_primary;
             color: white;
-            max-width: 712px;
+            max-width: 800px;
             margin-bottom: 60px;
         }
         button{

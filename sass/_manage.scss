@@ -3,7 +3,8 @@
     gap: 100px;
 }
 .m_card{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 60px;
 }
 .m_card_left{
@@ -15,7 +16,7 @@
         color: $color_text_black;
         margin-bottom: 24px;
     }
-    img{
+    .sariq{
         position: absolute;
         z-index: -1;
         left: 27px;
@@ -35,6 +36,10 @@
         color: #fff;
         padding: 20px 40px;
         border-radius: 8px;
+        img{
+            width: 14px;
+            margin-left: 10px;
+        }
     }
 }
 .m_card_right{
@@ -43,6 +48,92 @@
     background: var(--primary-100, #C4DEFD);
 }
 .m_card_img{
-    width: 39.296px;
-    height: 39.296px;
+    img{
+        max-width: 278.999px;
+    }
+}
+.m_cards .m_card:last-child{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+@media screen and (min-width: 1440px){
+    .manage{
+        padding: 140px 0;
+    }
+    .m_cards{
+        display: grid;
+    }
+    .m_card{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0px;
+    }
+    .m_card_left{
+        text-align: start;
+        position: relative;
+        h2{
+            font-size: $font_size_h2;
+            font-weight: 700;
+            color: $color_text_black;
+            margin-bottom: 24px;
+            max-width: 515px;
+        }
+        .sariq{
+            position: absolute;
+            z-index: -1;
+            left: 0px;
+            top: 152px;
+            img{
+                width: 564.208px;
+                height: 29.376px;
+            }
+        }
+        p{
+            font-size: $font_size_primary;
+            font-weight: 400;
+            color: $color_text_black;
+            line-height: 30px;
+            letter-spacing: -0.36px;
+            margin-bottom: 60px;
+            max-width: 645px;
+        }
+        button{
+            font-weight: 400;
+            font-size: $font_size_primary;
+            color: #fff;
+            padding: 20px 40px;
+            border-radius: 8px;
+            img{
+                width: 14px;
+                margin-left: 10px;
+            }
+        }
+    }
+    .m_card_right{
+        width: 719px;
+        height: 448px;
+    }
+
+    .m_cards .m_card:last-child{
+        display: flex;
+        flex-direction: row;
+    }
+    .m_cards .m_card:last-child .sariq{
+        img{
+            width: 377.184px;
+            height: 25.548px;
+        }
+        position: absolute;
+        z-index: -1;
+        left: 219px;
+        top: 66px;
+    }
+    .m_card_img{
+        img{
+            max-width: 583px;
+        }
+    }
 }
