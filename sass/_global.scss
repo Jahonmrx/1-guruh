@@ -1,11 +1,46 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$color_kok: #043873;
+$color_och_kok: #4F9CF9;
+$color_text_black:#212529;
+$font_text: 'Inter', sans-serif;
+$font_size_primary: 18px;
+$font_size_h2: 72px ;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+.container{
+    width: 728px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+    font-family: $font_text;
 }
 
-.container {
-  width: 288px;
-  margin: 0 auto;
+.container{
+    max-width: 288px;
+    margin: 0 auto;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+button{
+    border: none;
+    background-color: $color_och_kok;
+    color: white;
+
 }
