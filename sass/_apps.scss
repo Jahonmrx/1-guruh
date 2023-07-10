@@ -1,0 +1,106 @@
+// Apps__Section style
+@font-face {
+  font-family: "Inter";
+  src: url(../Fonts/Inter-VariableFont_slnt\wght.ttf);
+}
+$font-1: "Inter";
+$background-apps: #043873;
+$background-apps-button: #4f9cf9;
+$color-1: #fff;
+@mixin apps {
+  color: $color-1;
+  text-align: center;
+  font-family: $font-1, sans-serif;
+}
+#apps__section {
+max-width: 100%;
+  background-image: url(../img/Element.png);
+  background-color: $background-apps;
+  background-size: cover;
+  padding: 14rem 0;
+  .apps__section-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10rem;
+    img {
+      width: 48.5rem;
+      height: 39.3rem;
+    }
+  }
+  .apps__section-text {
+    padding: 0 2rem;
+    h2 {
+      @include apps;
+      font-size: 5.4rem;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: -0.108rem;
+      margin-bottom: 2.4rem;
+      + p {
+        @include apps;
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 3rem;
+        letter-spacing: -0.036rem;
+        margin-bottom: 6rem;
+      }
+    }
+    button {
+      border-radius: 0.6rem;
+      background: $background-apps-button;
+      padding: 2rem 4rem;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin: 0 auto;
+      a {
+        color: $color-1;
+        font-family: $font-1, sans-serif;
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 2.3rem;
+      }
+      a {
+        i {
+          color: $font-1;
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 738px) {
+  .container {
+    width: 138rem;
+  }
+  #apps__section {
+    .appses {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10rem;
+      .apps__section-img {
+        img {
+          width: 58.2rem;
+          height: 47.0796rem;
+        }
+      }
+      .apps__section-text {
+        padding: 0;
+        h2 {
+          text-align: start;
+          font-size: 7.2rem;
+          letter-spacing: -0.144rem;
+        }
+        p {
+          text-align: left;
+        }
+        button {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

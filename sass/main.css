@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+.container {
+  width: 728px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(../Fonts/Inter-VariableFont_slntwght.ttf);
+}
+#apps__section {
+  max-width: 100%;
+  background-image: url(../img/Element.png);
+  background-color: #043873;
+  background-size: cover;
+  padding: 14rem 0;
+}
+#apps__section .apps__section-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10rem;
+}
+#apps__section .apps__section-img img {
+  width: 48.5rem;
+  height: 39.3rem;
+}
+#apps__section .apps__section-text {
+  padding: 0 2rem;
+}
+#apps__section .apps__section-text h2 {
+  color: #fff;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 5.4rem;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.108rem;
+  margin-bottom: 2.4rem;
+}
+#apps__section .apps__section-text h2 + p {
+  color: #fff;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: -0.036rem;
+  margin-bottom: 6rem;
+}
+#apps__section .apps__section-text button {
+  border-radius: 0.6rem;
+  background: #4f9cf9;
+  padding: 2rem 4rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 auto;
+}
+#apps__section .apps__section-text button a {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.3rem;
+}
+#apps__section .apps__section-text button a i {
+  color: "Inter";
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 738px) {
+  .container {
+    width: 138rem;
+  }
+  #apps__section .appses {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10rem;
+  }
+  #apps__section .appses .apps__section-img img {
+    width: 58.2rem;
+    height: 47.0796rem;
+  }
+  #apps__section .appses .apps__section-text {
+    padding: 0;
+  }
+  #apps__section .appses .apps__section-text h2 {
+    text-align: start;
+    font-size: 7.2rem;
+    letter-spacing: -0.144rem;
+  }
+  #apps__section .appses .apps__section-text p {
+    text-align: left;
+  }
+  #apps__section .appses .apps__section-text button {
+    margin: 0;
+  }
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../Fonts/Inter-VariableFont_slntwght.ttf);
+}
+#testimon__section {
+  padding: 14rem 0;
+}
+#testimon__section h2 {
+  display: none;
+}
+#testimon__section h3 {
+  color: #212529;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 5.4rem;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.108rem;
+  margin-bottom: 6rem;
+}
+#testimon__section .name_img {
+  margin-bottom: -8rem;
+}
+#testimon__section .name_img img {
+  width: 230.334px;
+  height: 31.904px;
+  margin-left: 35rem;
+}
+#testimon__section .t_c-cards {
+  display: none;
+}
+#testimon__section .t_c-boxes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3.2rem;
+  background-color: #fff;
+  margin-bottom: 6rem;
+  cursor: pointer;
+}
+#testimon__section .t_c-boxes .t_c-box {
+  background-color: #4f9cf9;
+  padding: 2rem;
+  color: #fff;
+  border-radius: 10px;
+}
+#testimon__section .t_c-boxes .t_c-box .imggg img {
+  width: 7rem;
+  height: 7rem;
+  margin-bottom: 3.5rem;
+}
+#testimon__section .t_c-boxes .t_c-box p {
+  width: 30rem;
+  text-align: left;
+  font-family: "Inter";
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: -0.036rem;
+  margin-bottom: 5rem;
+}
+#testimon__section .t_c-boxes .t_c-box .ends-text {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+#testimon__section .t_c-boxes .t_c-box .ends-text h4 {
+  font-family: "Inter";
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.036rem;
+  margin-bottom: -0.7rem;
+}
+#testimon__section .t_c-boxes .t_c-box .ends-text h5 {
+  font-family: "Inter";
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: -0.36px;
+}
+#testimon__section .t_c-boxes .t_c-box:hover {
+  background: #fff;
+  box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.08);
+  color: #01252a;
+}
+#testimon__section .t_c-circles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+#testimon__section .t_c-circles .t_c-circle {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background-color: #4f9cf9;
+  border: none;
+  cursor: pointer;
+}
+#testimon__section .t_c-circles .t_c-circle:hover {
+  background-color: #043873;
+}
+
+@media screen and (min-width: 738px) {
+  .container {
+    width: 138rem;
+    margin: 0 auto;
+  }
+  #testimon__section h3 {
+    display: none;
+  }
+  #testimon__section .name_img img {
+    margin-left: 86rem;
+    margin-top: -1rem;
+  }
+  #testimon__section h2 {
+    display: flex;
+    color: #212529;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 84px;
+    justify-content: center;
+    margin-bottom: 6rem;
+  }
+  #testimon__section .t_c-boxes {
+    display: none;
+  }
+  #testimon__section .t_c-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3.2rem;
+    margin-bottom: 6rem;
+  }
+  #testimon__section .t_c-cards .t_c-card {
+    padding: 6rem 3rem;
+    border-radius: 10px;
+    background: #4f9cf9;
+    color: #fff;
+  }
+  #testimon__section .t_c-cards .t_c-card a i {
+    font-size: 10rem;
+    color: #fff;
+    margin-bottom: 3.2rem;
+  }
+  #testimon__section .t_c-cards .t_c-card h4 {
+    font-family: "Inter", sans-serif;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3rem;
+    letter-spacing: -0.036rem;
+    margin-bottom: 4rem;
+  }
+  #testimon__section .t_c-cards .t_c-card .lainer {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    opacity: 0.5;
+    margin-bottom: 6rem;
+  }
+  #testimon__section .t_c-cards .t_c-card .t_c-box {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 4.2rem;
+  }
+  #testimon__section .t_c-cards .t_c-card .t_c-box h5 {
+    color: #043873;
+    font-family: "Inter", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 3.6rem;
+    margin-bottom: 1.5rem;
+  }
+  #testimon__section .t_c-cards .t_c-card .t_c-box p {
+    font-family: "Inter", sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+    letter-spacing: -0.32px;
+  }
+  #testimon__section .t_c-cards .t_c-card:hover {
+    background-color: #fff;
+    color: #01252a;
+    background: #FFF;
+    box-shadow: 15px 10px 50px 0px rgba(0, 0, 0, 0.1);
+  }
+  #testimon__section .t_c-cards .t_c-card:hover a i {
+    color: #043873;
+  }
+  #testimon__section .t_c-cards .t_c-card:hover .lainer {
+    background-color: #01252a;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
