@@ -1,0 +1,48 @@
+.m_cards{
+    display: grid;
+    gap: 100px;
+}
+.m_card{
+    display: grid;
+    gap: 60px;
+}
+.m_card_left{
+    text-align: center;
+    position: relative;
+    h2{
+        font-size: 36px;
+        font-weight: 700;
+        color: $color_text_black;
+        margin-bottom: 24px;
+    }
+    img{
+        position: absolute;
+        z-index: -1;
+        left: 27px;
+        top: 68px;
+    }
+    p{
+        font-size: $font_size_primary;
+        font-weight: 400;
+        color: $color_text_black;
+        line-height: 30px;
+        letter-spacing: -0.36px;
+        margin-bottom: 60px;
+    }
+    button{
+        font-weight: 400;
+        font-size: $font_size_primary;
+        color: #fff;
+        padding: 20px 40px;
+        border-radius: 8px;
+    }
+}
+.m_card_right{
+    width: 286px;
+    height: 177px;
+    background: var(--primary-100, #C4DEFD);
+}
+.m_card_img{
+    width: 39.296px;
+    height: 39.296px;
+}

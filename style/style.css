@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 .container {
   width: 96%;
   margin: 0 auto;
@@ -13,6 +12,216 @@
   background-image: url(../img/Apps.png);
   background-repeat: no-repeat;
   background-size: cover;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  width: 288px;
+  margin: 0 auto;
+}
+
+.custom {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: #043873;
+}
+
+.custom__content .custom__content__left {
+  margin-bottom: 60px;
+}
+.custom__content h1 {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -0.72px;
+}
+.custom__content .h1_and_img {
+  position: relative;
+  margin-bottom: 24px;
+}
+.custom__content .h1_and_img .img_1 {
+  display: none;
+}
+.custom__content .h1_and_img img {
+  position: absolute;
+  right: 32px;
+  bottom: -6px;
+  width: 132px;
+  height: 35px;
+  z-index: 0;
+}
+.custom__content .custom__content__left__p1 {
+  display: none;
+}
+.custom__content p {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.36px;
+}
+.custom__content button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 60px auto 0;
+  padding: 20px 40px;
+  border-radius: 8px;
+  border: none;
+  background: #4f9cf9;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.36px;
+}
+.custom__content .custom__content__right {
+  width: 285px;
+  height: 199px;
+  background: #c4defd;
+}
+
+.custom__content_2 {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.custom__content_2 .custom__content__left {
+  margin-bottom: 0;
+}
+.custom__content_2 h1 {
+  color: #212529;
+}
+.custom__content_2 p {
+  color: #212529;
+}
+.custom__content_2 .custom__content__right {
+  margin-bottom: 60px;
+}
+
+.pricing .h1_img {
+  position: relative;
+  margin-bottom: 24px;
+}
+.pricing .h1_img h1 {
+  color: #212529;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.72px;
+}
+.pricing .h1_img img {
+  width: 110px;
+  position: absolute;
+  left: 99px;
+  bottom: -4px;
+  z-index: -1;
+}
+.pricing p {
+  color: #212529;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.36px;
+  margin-bottom: 80px;
+}
+.pricing .card_1 {
+  display: none;
+}
+.pricing .card_3 {
+  display: none;
+}
+.pricing .cards__card {
+  padding: 40px 44px;
+  border-radius: 10px;
+  border: 1px solid #ffe492;
+}
+.pricing .cards__card h5 {
+  color: #212529;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+}
+.pricing .cards__card h4 {
+  color: #212529;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -0.72px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.pricing .cards__card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.pricing .cards__card ul li {
+  display: flex;
+  gap: 19px;
+  align-items: center;
+  color: #212529;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.32px;
+}
+.pricing .cards__card ul li:first-child {
+  color: #212529;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: -0.36px;
+  margin-bottom: 25px;
+}
+.pricing .cards__card:nth-child(2) {
+  padding: 20px;
+  border: none;
+  background: #043873;
+  box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.08);
+}
+.pricing .cards__card:nth-child(2) h5 {
+  color: #fff;
+}
+.pricing .cards__card:nth-child(2) h4 {
+  color: #ffe492;
+}
+.pricing .cards__card:nth-child(2) li {
+  color: #fefefe;
+}
+.pricing .cards__card:nth-child(2) li:first-child {
+  color: #fff;
+}
+.pricing .cards__card:nth-child(2) .card_2__h4_1 {
+  display: none;
+}
+.pricing .cards__card:nth-child(2) button {
+  color: #fff;
+  background: #4F9CF9;
+  border: none;
+}
+.pricing .cards__card button {
+  color: #212529;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.32px;
+  border-radius: 8px;
+  border: 1px solid #ffe492;
+  background: #fff;
+  padding: 16px 40px;
+  margin-top: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
+
