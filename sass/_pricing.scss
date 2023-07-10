@@ -1,4 +1,6 @@
 .pricing {
+  padding-top: 80px;
+  padding-bottom: 80px;
   .h1_img {
     position: relative;
     margin-bottom: 24px;
@@ -9,6 +11,9 @@
       font-weight: 700;
       line-height: normal;
       letter-spacing: -0.72px;
+    }
+    .element_1 {
+      display: none;
     }
     img {
       width: 110px;
@@ -26,6 +31,9 @@
     line-height: 30px;
     letter-spacing: -0.36px;
     margin-bottom: 80px;
+  }
+  .cards {
+    margin-bottom: 60px;
   }
   .card_1 {
     display: none;
@@ -94,9 +102,9 @@
       .card_2__h4_1 {
         display: none;
       }
-      button{
+      button {
         color: #fff;
-        background: #4F9CF9;
+        background: #4f9cf9;
         border: none;
       }
     }
@@ -111,6 +119,140 @@
 
       padding: 16px 40px;
       margin-top: 25px;
+    }
+  }
+  .nuqtalar {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 0 auto;
+    .nuqta {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #4f9cf9;
+      &:nth-child(2) {
+        background: #043873;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .pricing {
+    .nuqtalar {
+      display: none;
+    }
+    padding-top: 140px;
+    padding-bottom: 140px;
+    .h1_img {
+      h1 {
+        font-size: 54px;
+      }
+      .element {
+        width: 290px;
+        left: 350px;
+        bottom: -20px;
+      }
+    }
+    .cards {
+      margin-bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 32px;
+      overflow-x: hidden;
+      .card_1 {
+        display: block;
+      }
+      .card_3 {
+        display: block;
+      }
+      .cards__card {
+        margin: 0 auto;
+        ul {
+          li {
+            width: 384px;
+          }
+        }
+        &:nth-child(2) {
+          width: 472px;
+          padding: 80px 44px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1152px) {
+  .pricing {
+    h1 {
+      font-size: 64px;
+      letter-spacing: -1.28px;
+    }
+    .h1_img {
+      .element {
+        width: 276px;
+        left: 530px;
+        bottom: -16px;
+      }
+    }
+    p {
+      max-width: 979px;
+      margin: 0 auto 60px;
+    }
+    .cards {
+      overflow-x: unset;
+      justify-content: space-between;
+      .cards__card {
+        ul {
+          li {
+            width: 253px;
+          }
+        }
+
+        &:nth-child(2) {
+          width: 341px;
+          .card_2__h4_1 {
+            display: block;
+          }
+          .card_2__h4_2 {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pricing {
+    h1 {
+      font-size: 72px;
+      letter-spacing: -1.44px;
+    }
+    .h1_img {
+      .element_1 {
+        display: block;
+        width: 260px;
+        left: 660px;
+        bottom: 0px;
+      }
+      .element {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .pricing {
+    .h1_img {
+      .element_1 {
+        width: 260px;
+        left: 735px;
+        bottom: 0px;
+      }
     }
   }
 }
