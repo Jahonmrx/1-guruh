@@ -114,9 +114,9 @@ $color-3: #01252a;
     }
   }
 }
-@media screen and (min-width: 738px) {
+@media screen and (min-width: 800px) {
   .container {
-    width: 138rem;
+     width: 138rem;
     margin: 0 auto;
   }
   #testimon__section {
@@ -190,31 +190,31 @@ $color-3: #01252a;
             line-height: 3.6rem;
             margin-bottom: 1.5rem;
           }
-          p{
-font-family: $font-1,sans-serif;
-font-size: 1.6rem;
-font-style: normal;
-font-weight: 400;
-line-height: 2rem;
-letter-spacing: -0.32px;
+          p {
+            font-family: $font-1, sans-serif;
+            font-size: 1.6rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 2rem;
+            letter-spacing: -0.32px;
           }
         }
       }
-      .t_c-card:hover{
+      .t_c-card:hover {
         background-color: $color-1;
         color: #01252a;
-        background: #FFF;
-box-shadow: 15px 10px 50px 0px rgba(0, 0, 0, 0.10);
-        a{
-            i{
-                color: #043873;
-            }
+        background: #fff;
+        box-shadow: 15px 10px 50px 0px rgba(0, 0, 0, 0.1);
+        a {
+          i {
+            color: #043873;
+          }
         }
-        .lainer{
-            background-color: #01252a;
-
+        .lainer {
+          background-color: #01252a;
         }
       }
     }
   }
 }
+
