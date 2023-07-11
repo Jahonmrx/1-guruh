@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 $color_kok: #043873;
@@ -6,13 +8,23 @@ $color_text_black:#212529;
 $font_text: 'Inter', sans-serif;
 $font_size_primary: 18px;
 $font_size_h2: 72px ;
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: $font_text;
 }
+html{
+    font-size: 10px;
+}
+.container{
+    width: 728px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+   
+
 
 .j_container{
     max-width: 95%;
@@ -35,4 +47,5 @@ button{
     border: none;
     background-color: $color_och_kok;
     color: white;
+
 }
