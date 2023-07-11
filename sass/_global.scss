@@ -12,11 +12,16 @@ $font_size_h2: 72px ;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: $font_text;
 }
 html{
     font-size: 10px;
 }
-.container{
+.p_container{
+    width: 728px;
+    margin: 0 auto;
+}
+.c_container{
     width: 728px;
     margin: 0 auto;
 }
@@ -28,7 +33,14 @@ html{
     max-width: 95%;
     margin: 0 auto;
 }
-
+.t_container{
+    width: 728px;
+    margin: 0 auto;
+}
+.a_container{
+    width: 728px;
+    margin: 0 auto;
+}
 
 li{
     list-style: none;
