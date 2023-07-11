@@ -1,26 +1,33 @@
+.manage{
+    padding: 140px 0;
+}
 .m_cards{
     display: grid;
     gap: 100px;
 }
 .m_card{
     display: flex;
-    flex-direction: column;
-    gap: 60px;
+    justify-content: space-between;
+    align-items: center;
 }
 .m_card_left{
-    text-align: center;
     position: relative;
     h2{
-        font-size: 36px;
+        font-size: $font_size_h2;
         font-weight: 700;
         color: $color_text_black;
         margin-bottom: 24px;
+        max-width: 515px;
     }
     .sariq{
         position: absolute;
         z-index: -1;
-        left: 27px;
-        top: 68px;
+        left: 0px;
+        top: 145px;
+        img{
+            width: 564.208px;
+            height: 58.376px;
+        }
     }
     p{
         font-size: $font_size_primary;
@@ -29,6 +36,7 @@
         line-height: 30px;
         letter-spacing: -0.36px;
         margin-bottom: 60px;
+        max-width: 645px;
     }
     button{
         font-weight: 400;
@@ -43,97 +51,302 @@
     }
 }
 .m_card_right{
-    width: 286px;
-    height: 177px;
+    width: 719px;
+    height: 448px;
     background: var(--primary-100, #C4DEFD);
+}
+.m_cards .m_card:last-child .sariq{
+    img{
+        width: 377.184px;
+        height: 40.548px;
+    }
+    position: absolute;
+    z-index: -1;
+    left: 220px;
+    top: 61px;
 }
 .m_card_img{
     img{
-        max-width: 278.999px;
+        max-width: 100%;
     }
-}
-.m_cards .m_card:last-child{
-    display: flex;
-    flex-direction: column-reverse;
 }
 
-@media screen and (min-width: 1440px){
-    .manage{
-        padding: 140px 0;
-    }
-    .m_cards{
-        display: grid;
-    }
-    .m_card{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        gap: 0px;
-    }
+@media screen and (max-width: 1350px){
     .m_card_left{
-        text-align: start;
-        position: relative;
         h2{
-            font-size: $font_size_h2;
-            font-weight: 700;
-            color: $color_text_black;
-            margin-bottom: 24px;
-            max-width: 515px;
+            font-size: 64px;
+            max-width: 453px;
         }
         .sariq{
-            position: absolute;
-            z-index: -1;
-            left: 0px;
-            top: 152px;
             img{
-                width: 564.208px;
-                height: 29.376px;
+                width: 256.199px;
+                height: 50.03px;
+                transform: rotate(-0.316deg);
             }
+            left: 194px;
+            top: 133px;
         }
         p{
-            font-size: $font_size_primary;
-            font-weight: 400;
-            color: $color_text_black;
-            line-height: 30px;
-            letter-spacing: -0.36px;
-            margin-bottom: 60px;
-            max-width: 645px;
-        }
-        button{
-            font-weight: 400;
-            font-size: $font_size_primary;
-            color: #fff;
-            padding: 20px 40px;
-            border-radius: 8px;
-            img{
-                width: 14px;
-                margin-left: 10px;
-            }
+            max-width: 445px;
         }
     }
-    .m_card_right{
-        width: 719px;
-        height: 448px;
-    }
-
-    .m_cards .m_card:last-child{
-        display: flex;
-        flex-direction: row;
+    .m_cards .m_card:last-child p{
+        max-width: 535px;
     }
     .m_cards .m_card:last-child .sariq{
         img{
-            width: 377.184px;
-            height: 25.548px;
+            width: 286.465px;
+            height: 40.277px;
         }
-        position: absolute;
-        z-index: -1;
-        left: 219px;
-        top: 66px;
+        left: 178px;
+        top: 40px;
+    }
+    .m_card_right{
+        width: 527.741px;
+        height: 328.48px;
     }
     .m_card_img{
         img{
-            max-width: 583px;
+            max-width: 90%;
         }
     }
 }
+
+@media screen and (max-width: 1016px){
+    .manage{
+        padding: 100px 0;
+    }
+    .m_card{
+        text-align: center;
+        flex-direction: column;
+        h2{
+            font-size: 54px;
+            max-width: 100%;
+        }
+        .sariq{
+            img{
+                width: 402.199px;
+                height: 36.03px;
+            }
+            left: 282px;
+            top: 44px;
+        }
+        p{
+            max-width: 100%;
+        }
+        button{
+            margin-bottom: 60px;
+        }
+    }
+    .m_cards .m_card:last-child{
+        flex-direction: column-reverse;
+        p{
+            max-width: 100%;
+        }
+        button{
+            margin-bottom: 100px;
+        }
+    }
+    .m_cards .m_card:last-child .sariq{
+        img{
+            width: 286.465px;
+            height: 40.277px;
+        }
+            left: 310px;
+            top: 45px
+    }
+    .m_card_img{
+        img{
+            max-width: 80%;
+        }
+    }
+}
+@media screen and (max-width: 721px){
+    .j_container{
+        max-width: 288px;
+    }
+    .manage{
+        padding: 80px 0;
+    }
+    .m_card{
+        text-align: center;
+        flex-direction: column;
+        h2{
+            font-size: 36px;
+            max-width: 100%;
+        }
+        .sariq{
+            img{
+                width: 264.199px;
+                height: 36.03px;
+            }
+            left: 28px;
+            top: 70px;
+        }
+        p{
+            max-width: 100%;
+
+        }
+        button{
+            margin-bottom: 60px;
+        }
+    }
+    .m_cards .m_card:last-child{
+        flex-direction: column-reverse;
+        p{
+            max-width: 100%;
+        }
+        button{
+            margin-bottom: 60px;
+        }
+    }
+    .m_card_right{
+        width: 100%;
+        height: 177px;
+    }
+    .m_cards .m_card:last-child .sariq{
+        img{
+            width: 174.465px;
+            height: 40.277px;
+        }
+            left: 120px;
+            top: 11px;
+}
+    .m_card_img{
+        img{
+            max-width: 100%;
+        }
+    }
+}
+// @media screen and (max-width: 320px){
+//     .manage{
+//         padding: 80px 0;
+//     }
+//     .m_cards{
+//         display: grid;
+//         gap: 100px;
+//     }
+//     .m_card{
+//         display: flex;
+//         flex-direction: column;
+//         gap: 60px;
+//     }
+//     .m_card_left{
+//         text-align: center;
+//         position: relative;
+//         h2{
+//             font-size: 36px;
+//             font-weight: 700;
+//             color: $color_text_black;
+//             margin-bottom: 24px;
+//         }
+//         .sariq{
+//             position: absolute;
+//             z-index: -1;
+//             left: 27px;
+//             top: 68px;
+//         }
+//         p{
+//             font-size: $font_size_primary;
+//             font-weight: 400;
+//             color: $color_text_black;
+//             line-height: 30px;
+//             letter-spacing: -0.36px;
+//             margin-bottom: 60px;
+//         }
+//         button{
+//             font-weight: 400;
+//             font-size: $font_size_primary;
+//             color: #fff;
+//             padding: 20px 40px;
+//             border-radius: 8px;
+//             img{
+//                 width: 14px;
+//                 margin-left: 10px;
+//             }
+//         }
+//     }
+//     .m_card_right{
+//         width: 286px;
+//         height: 177px;
+//         background: var(--primary-100, #C4DEFD);
+//     }
+//     .m_card_img{
+//         img{
+//             max-width: 278.999px;
+//         }
+//     }
+//     .m_cards .m_card:last-child{
+//         display: flex;
+//         flex-direction: column-reverse;
+//     }
+// }
+
+// @media screen and (min-width: 768px){
+//     .manage{
+//         padding: 100px 0;
+//     }
+//     .m_card_left{
+//         text-align: center;
+//         position: relative;
+//         h2{
+//             font-size: 54px;
+//             font-weight: 700;
+//             color: $color_text_black;
+//             margin-bottom: 24px;
+//         }
+//         .sariq{
+//             position: absolute;
+//             z-index: -1;
+//             left: 290px;
+//             top: 46px;
+//             img{
+//                 width: 407.677px;
+//                 height: 29.413px;
+//             }
+//         }
+//         p{
+//             font-size: $font_size_primary;
+//             font-weight: 400;
+//             color: $color_text_black;
+//             line-height: 30px;
+//             letter-spacing: -0.36px;
+//             margin-bottom: 60px;
+//         }
+//         button{
+//             font-weight: 400;
+//             font-size: $font_size_primary;
+//             color: #fff;
+//             padding: 20px 40px;
+//             border-radius: 8px;
+//             display: flex;
+//             align-items: center;
+//             margin: 0 auto;
+//             img{
+//                 width: 14px;
+//                 margin-left: 10px;
+//             }
+//         }
+//     }
+//     .m_cards .m_card:last-child .sariq{
+//         img{
+//             width: 262px;
+//             height: 31.355px;
+//         }
+//         position: absolute;
+//         z-index: -1;
+//             left: 320px;
+//             top: 47px;
+//     }
+//     .m_card_right{
+//         width: 561px;
+//         height: 349px;
+//         margin: 0 auto;
+//     }
+//     .m_card_img{
+//         img{
+//             max-width: 454px;
+//         }
+//         margin: 0 auto;
+//     }
+// }
