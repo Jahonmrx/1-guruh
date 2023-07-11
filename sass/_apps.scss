@@ -1,16 +1,10 @@
 // Apps__Section style
-@font-face {
-  font-family: "Inter";
-  src: url(../Fonts/Inter-VariableFont_slnt\wght.ttf);
-}
-$font-1: "Inter";
 $background-apps: #043873;
 $background-apps-button: #4f9cf9;
 $color-1: #fff;
 @mixin apps {
   color: $color-1;
   text-align: center;
-  font-family: $font-1, sans-serif;
 }
 #apps__section {
 max-width: 100%;
@@ -57,14 +51,12 @@ max-width: 100%;
       margin: 0 auto;
       a {
         color: $color-1;
-        font-family: $font-1, sans-serif;
         font-size: 1.8rem;
         font-weight: 500;
         line-height: 2.3rem;
       }
       a {
         i {
-          color: $font-1;
           font-size: 3rem;
         }
       }
@@ -72,7 +64,7 @@ max-width: 100%;
   }
 }
 @media screen and (min-width: 738px) {
-  .container {
+  .a_container {
     width: 138rem;
   }
   #apps__section {
